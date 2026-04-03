@@ -47,6 +47,11 @@ function agregarTarea() {
          actualizarContador();
         }
     });
+
+ listaTareas.appendChil(li);
+ inputTarea.value = '';
+ selectCategoria.value = '';
+ actualizarContador();
 } 
 
 function obtenerEmoji(categoria) {
@@ -58,7 +63,7 @@ function obtenerEmoji(categoria) {
     'otrasTareas': '📋'
   };
   return emojis[categoria] || '📌';
-}
+};
 
 function actualizarContador() {
   const total      = listaTareas.querySelectorAll('.tarea-item').length;
