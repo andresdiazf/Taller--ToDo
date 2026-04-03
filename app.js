@@ -47,11 +47,11 @@ function agregarTarea() {
          actualizarContador();
         }
     });
-
- listaTareas.appendChil(li);
+ 
+ actualizarContador();
  inputTarea.value = '';
  selectCategoria.value = '';
- actualizarContador();
+ listaTareas.appendChil(li);
 } 
 
 function obtenerEmoji(categoria) {
