@@ -51,7 +51,7 @@ function agregarTarea() {
  actualizarContador();
  inputTarea.value = '';
  selectCategoria.value = '';
- listaTareas.appendChil(li);
+ listaTareas.appendChild(li);
 } 
 
 function obtenerEmoji(categoria) {
