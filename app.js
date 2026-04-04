@@ -48,10 +48,10 @@ function agregarTarea() {
         }
     });
  
+ listaTareas.appendChild(li);
  actualizarContador();
  inputTarea.value = '';
  selectCategoria.value = '';
- listaTareas.appendChild(li);
 } 
 
 function obtenerEmoji(categoria) {
